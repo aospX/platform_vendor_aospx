@@ -7,6 +7,10 @@ $(call inherit-product, vendor/aospX/products/common.mk)
 # Google Apps
 $(call inherit-product-if-exists, vendor/google/google-vendor.mk)
 
+# Temp fix for GPS
+PRODUCT_COPY_FILES += \
+    vendor/aospX/prebuilt/ace/lib/hw/gps.spade.so:system/lib/hw/gps.spade.so
+
 #
 # Setup device specific product configuration.
 #
