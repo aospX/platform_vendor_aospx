@@ -1,1 +1,2 @@
 add_lunch_combo aospX_ace-eng
+add_lunch_combo aospX_ace-userdebug
