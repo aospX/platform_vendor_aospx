@@ -6,6 +6,9 @@ PRODUCT_DEVICE := generic
 # Include GSM stuff
 $(call inherit-product, vendor/aospX/products/gsm.mk)
 
+# Google Apps
+$(call inherit-product-if-exists, vendor/google/google-vendor.mk)
+
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules
 
@@ -71,3 +74,15 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospX/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospX/overlay/dictionaries
+
+
+# aospX Version
+PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MAINTENANCE = 0-AR10
+
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K
+
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.modversion=aospX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_RELEASE_NAME)
+
