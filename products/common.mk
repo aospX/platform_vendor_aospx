@@ -1,10 +1,10 @@
 # Generic aospX product
-PRODUCT_NAME := aospX
-PRODUCT_BRAND := aospX
+PRODUCT_NAME := aospx
+PRODUCT_BRAND := aospx
 PRODUCT_DEVICE := generic
 
 # Include GSM stuff
-$(call inherit-product, vendor/aospX/products/gsm.mk)
+$(call inherit-product, vendor/aospx/products/gsm.mk)
 
 # Google Apps
 $(call inherit-product-if-exists, vendor/google/google-vendor.mk)
@@ -50,19 +50,19 @@ PRODUCT_PACKAGES += \
 
 # Backuptool
 PRODUCT_COPY_FILES += \
-    vendor/aospX/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
+    vendor/aospx/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
 
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/aospX/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/aospX/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/aospX/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete \
-    vendor/aospX/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/aospx/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/aospx/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/aospx/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete \
+    vendor/aospx/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 PRODUCT_COPY_FILES += \
-    vendor/aospX/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/aospX/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/aospX/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions
+    vendor/aospx/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/aospx/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/aospx/prebuilt/common/bin/fix_permissions:system/bin/fix_permissions
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -70,10 +70,10 @@ PRODUCT_COPY_FILES += \
 
 # Boot Animation
 PRODUCT_COPY_FILES += \
-    vendor/aospX/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aospx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aospX/overlay/common
-PRODUCT_PACKAGE_OVERLAYS += vendor/aospX/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/dictionaries
 
 
 # aospX Version

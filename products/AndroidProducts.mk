@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aospX_ace.mk
+    $(LOCAL_DIR)/aospx_ace.mk

@@ -35,7 +35,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aospX/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aospx/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -140,7 +140,7 @@ rm -rf $REPACK/ota/recovery
 	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
 
 # Determine what to name the new signed package
-if [ -z "$aospX_NIGHTLY" ]; then
+if [ -z "$AOSPX_NIGHTLY" ]; then
 	MODVERSION=`sed -n -e'/ro\.modversion/s/^.*aospX-//p' $REPACK/ota/system/build.prop`
 	: ${MODVERSION:=nightly}
 	OUTFILE=$OUT/update-aospX-$MODVERSION-signed.zip

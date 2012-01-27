@@ -2,16 +2,16 @@
 $(call inherit-product, device/htc/ace/full_ace.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aospX/products/common.mk)
+$(call inherit-product, vendor/aospx/products/common.mk)
 
 # Temp fix for GPS
 PRODUCT_COPY_FILES += \
-    vendor/aospX/prebuilt/ace/lib/hw/gps.spade.so:system/lib/hw/gps.spade.so
+    vendor/aospx/prebuilt/ace/lib/hw/gps.spade.so:system/lib/hw/gps.spade.so
 
 #
 # Setup device specific product configuration.
 #
-PRODUCT_NAME := aospX_ace
+PRODUCT_NAME := aospx_ace
 PRODUCT_BRAND := htc_wwe
 PRODUCT_DEVICE := ace
 PRODUCT_MODEL := Desire HD
