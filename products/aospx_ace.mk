@@ -4,6 +4,9 @@ $(call inherit-product, device/htc/ace/full_ace.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/aospx/products/common.mk)
 
+# Include GSM stuff
+$(call inherit-product, vendor/aospx/products/gsm.mk)
+
 # Temp fix for GPS
 PRODUCT_COPY_FILES += \
     vendor/aospx/prebuilt/ace/lib/hw/gps.spade.so:system/lib/hw/gps.spade.so

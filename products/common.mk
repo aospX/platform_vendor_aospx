@@ -3,9 +3,6 @@ PRODUCT_NAME := aospx
 PRODUCT_BRAND := aospx
 PRODUCT_DEVICE := generic
 
-# Include GSM stuff
-$(call inherit-product, vendor/aospx/products/gsm.mk)
-
 # Google Apps
 $(call inherit-product-if-exists, vendor/google/google-vendor.mk)
 
