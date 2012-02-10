@@ -27,6 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Required Common Packages
 PRODUCT_PACKAGES += \
     Mms \
+    Camera \
     FileManager \
     Superuser \
     Superuser.apk \
