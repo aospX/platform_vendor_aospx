@@ -28,6 +28,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Mms \
     Camera \
+    VideoEditor \
+    VoiceDialer \
+    SoundRecorder \
+    SpeechRecorder \
     FileManager \
     Superuser \
     Superuser.apk \
