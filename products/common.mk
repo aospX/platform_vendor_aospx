@@ -31,7 +31,6 @@ PRODUCT_PACKAGES += \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
-    SpeechRecorder \
     FileManager \
     Superuser \
     Superuser.apk \
