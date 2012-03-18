@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     FileManager \
+    ZeroXBenchmark \
     Superuser \
     Superuser.apk \
     su
