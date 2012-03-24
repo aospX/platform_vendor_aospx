@@ -4,6 +4,9 @@ $(call inherit-product, device/htc/ace/full_ace.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/aospx/products/common.mk)
 
+# Inherit proprietary qcom stuff.
+$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
+
 # Include GSM stuff
 $(call inherit-product, vendor/aospx/products/gsm.mk)
 
