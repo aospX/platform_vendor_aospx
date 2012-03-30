@@ -28,6 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Mms \
     Camera \
+    GooManager \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
@@ -72,9 +73,6 @@ PRODUCT_COPY_FILES += \
 # Boot Animation
 PRODUCT_COPY_FILES += \
     vendor/aospx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
-
-PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/app/GooManager.apk:system/app/GooManager.apk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/dictionaries
