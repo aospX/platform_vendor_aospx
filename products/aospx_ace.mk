@@ -10,10 +10,6 @@ $(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
 # Include GSM stuff
 $(call inherit-product, vendor/aospx/products/gsm.mk)
 
-# Temp fix for GPS
-PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/ace/lib/hw/gps.spade.so:system/lib/hw/gps.spade.so
-
 #
 # Setup device specific product configuration.
 #
