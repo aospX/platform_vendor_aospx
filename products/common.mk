@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
+# Extras
+PRODUCT_PACKAGES += \
+    openvpn
+
 # Backuptool
 PRODUCT_COPY_FILES += \
     vendor/aospx/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh
