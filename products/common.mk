@@ -73,10 +73,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Temp fix for LiveWallpapers
-PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/lib/libbcc.so:/system/lib/libbcc.so
-
 # Boot Animation
 PRODUCT_COPY_FILES += \
     vendor/aospx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
