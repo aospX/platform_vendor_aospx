@@ -51,7 +51,10 @@ PRODUCT_PACKAGES += \
 
 # Extras
 PRODUCT_PACKAGES += \
-    openvpn
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs
 
 # Backuptool
 PRODUCT_COPY_FILES += \
