@@ -28,6 +28,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Mms \
     Camera \
+    Calendar \
+    CalendarProvider \
     VideoEditor \
     VoiceDialer \
     SoundRecorder \
