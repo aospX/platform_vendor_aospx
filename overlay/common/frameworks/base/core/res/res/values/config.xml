@@ -23,4 +23,8 @@
          Bluetooth Module -->
     <bool name="config_bluetooth_adapter_quick_switch">false</bool>
 
+    <!-- Location services -->
+    <string name="config_networkLocationProviderPackageName">com.google.android.location</string>
+    <string name="config_geocodeProviderPackageName">com.google.android.location</string>
+
 </resources>

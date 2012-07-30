@@ -34,7 +34,6 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     FileManager \
-    ZeroXBenchmark \
     Superuser \
     Superuser.apk \
     su
@@ -76,7 +75,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Boot Animation
 PRODUCT_COPY_FILES += \
@@ -90,12 +89,12 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/dictionaries
 
 
 # aospX Version
-PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MAJOR = 2
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-BR4
-PRODUCT_VERSION_GOO = 11
+PRODUCT_VERSION_MAINTENANCE = 0-AR1
+PRODUCT_VERSION_GOO = 1
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76L
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JRO03H
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.modversion=aospX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_RELEASE_NAME) \
