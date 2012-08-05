@@ -85,6 +85,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aospx/prebuilt/common/app/GooManager.apk:system/app/GooManager.apk
 
+# BT config
+PRODUCT_COPY_FILES += \
+    system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/dictionaries
 
