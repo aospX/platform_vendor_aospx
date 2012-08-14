@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/aospx/prebuilt/common/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_COPY_FILES += \
-    vendor/aospx/prebuilt/common/app/GooManager.apk:system/app/GooManager.apk
+    vendor/aospx/prebuilt/common/app/OTAUpdater.apk:system/app/OTAUpdater.apk
 
 # BT config
 PRODUCT_COPY_FILES += \
@@ -96,14 +96,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aospx/overlay/dictionaries
 # aospX Version
 PRODUCT_VERSION_MAJOR = 1
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-BR5
-PRODUCT_VERSION_GOO = 12
+PRODUCT_VERSION_MAINTENANCE = 0
+PRODUCT_VERSION_EXTRA = BR5
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76L
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=aospX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_RELEASE_NAME) \
-	ro.goo.developerid=existz \
-	ro.goo.rom=aospx \
-	ro.goo.version=$(PRODUCT_VERSION_GOO)
+	ro.modversion=aospX-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(PRODUCT_VERSION_EXTRA)-$(PRODUCT_RELEASE_NAME) \
+	otaupdater.otaid=aospx \
+	otaupdater.otatime=20120806-1051 \
+	otaupdater.otaver=$(PRODUCT_VERSION_EXTRA)
 
